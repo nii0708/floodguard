@@ -8,7 +8,7 @@ Android flood-rescue indoor navigation using ARCore VIO for positioning and on-d
 - ARCore-supported device (optional — falls back to sensor PDR if unavailable)
 - ~3 GB free storage for the Gemma 4 E2B model
 - Android Studio Hedgehog or newer
-- JDK 17
+- JDK 17 (Automatically configured via Gradle Toolchain)
 
 ## Installation
 
@@ -25,13 +25,13 @@ File → Open → select the `floodguard` folder. Wait for Gradle sync to finish
 
 ### 3. Download the Gemma 4 E2B model
 
-The model is **not bundled** — it must be placed on the device manually before first launch.
+The model is **not bundled**. You can download it in-app on first launch, or manually via ADB for faster setup.
 
-1. Download the Gemma 4 E2B LiteRT (`.litertlm`) file from [Google AI Edge](https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/tree/main).
+1. Download the `gemma-4-E2B-it.litertlm` file from [Hugging Face](https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/tree/main).
 2. Connect your device and push the model:
 
 ```bash
-adb push gemma4-e2b.litertlm /sdcard/Android/data/com.floodguard.rescue/files/
+adb push gemma-4-E2B-it.litertlm /sdcard/Android/data/com.floodguard.rescue/files/models/
 ```
 
 > The app validates the file on launch via a magic-header check. If the path or header is wrong, it will redirect to the model setup screen.

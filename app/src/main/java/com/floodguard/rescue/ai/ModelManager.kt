@@ -32,9 +32,19 @@ object ModelManager {
     fun isModelPresent(context: Context): Boolean = checkModel(context).isCompatible
 
     fun modelFile(context: Context): File {
-        val dir = File(context.filesDir, MODEL_DIR)
-        if (!dir.exists()) dir.mkdirs()
-        return File(dir, MODEL_FILENAME)
+        val internalDir = File(context.filesDir, MODEL_DIR)
+        val internalFile = File(internalDir, MODEL_FILENAME)
+        if (internalFile.exists()) return internalFile
+
+        val externalDir = context.getExternalFilesDir(MODEL_DIR)
+        if (externalDir != null) {
+            val externalFile = File(externalDir, MODEL_FILENAME)
+            if (externalFile.exists()) return externalFile
+        }
+
+        // Default to internal for downloads
+        if (!internalDir.exists()) internalDir.mkdirs()
+        return internalFile
     }
 
     fun checkModel(context: Context): ModelCheck {
