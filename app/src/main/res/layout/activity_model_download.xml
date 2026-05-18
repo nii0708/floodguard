@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/space_2xl"
+    android:background="@color/bg_screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="@dimen/space_sm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model_setup_title"
+        android:textSize="18sp"
+        android:textColor="@color/btn_primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/space_lg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model_setup_description"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/space_2xl" />
+
+    <ProgressBar
+        android:id="@+id/download_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="100"
+        android:visibility="gone"
+        android:progressTint="@color/btn_primary"
+        android:progressBackgroundTint="@color/border_subtle"
+        android:layout_marginBottom="@dimen/space_lg" />
+
+    <TextView
+        android:id="@+id/download_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="@dimen/space_xl" />
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn_secondary"
+        android:text="@string/btn_download_model"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btn_primary" />
+
+</LinearLayout>

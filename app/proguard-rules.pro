@@ -1,0 +1,7 @@
+-keep class com.google.mediapipe.** { *; }
+-keep class com.google.ar.core.** { *; }
+-keep class com.google.ai.edge.litertlm.** { *; }
+-keep class com.floodguard.rescue.memory.** { *; }
+-dontwarn com.google.mediapipe.**
+-dontwarn com.google.ar.core.**
+-dontwarn com.google.ai.edge.litertlm.**

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/alert_bg"
+    android:padding="@dimen/space_lg">
+
+    <!-- Headline row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠"
+            android:textSize="20sp"
+            android:layout_marginEnd="@dimen/space_sm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_headline"
+            android:textColor="@color/alert_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Alert message -->
+    <TextView
+        android:id="@+id/alert_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/alert_subtext"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/space_sm" />
+
+    <!-- Suggestion -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cari rute lain."
+        android:textColor="@color/alert_text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/space_xs" />
+
+    <!-- Auto-dismiss progress bar -->
+    <ProgressBar
+        android:id="@+id/dismiss_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="@color/alert_text"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:layout_marginTop="@dimen/space_sm" />
+
+</LinearLayout>

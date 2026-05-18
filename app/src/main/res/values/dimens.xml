@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing Scale -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">20dp</dimen>
+    <dimen name="space_2xl">32dp</dimen>
+
+    <!-- Component Heights / Touch Targets -->
+    <dimen name="height_list_row">64dp</dimen>
+    <dimen name="height_btn_primary">72dp</dimen>
+    <dimen name="height_btn_secondary">60dp</dimen>
+    <dimen name="height_icon_button">44dp</dimen>
+    <dimen name="height_top_bar">44dp</dimen>
+    <dimen name="height_mode_banner">38dp</dimen>
+    <dimen name="height_audio_option">74dp</dimen>
+    <dimen name="height_mini_map">152dp</dimen>
+    <dimen name="height_post_mission_map">210dp</dimen>
+    <dimen name="height_battery_progress">13dp</dimen>
+
+    <!-- Corner Radii -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">14dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+
+    <!-- Map element sizes -->
+    <dimen name="map_landmark_radius">3.5dp</dimen>
+    <dimen name="map_position_radius">4.5dp</dimen>
+    <dimen name="map_position_halo_radius">9dp</dimen>
+    <dimen name="map_path_stroke_width">2.5dp</dimen>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FloodGuard</string>
+
+    <!-- Model Download -->
+    <string name="model_setup_title">Initial Setup</string>
+    <string name="model_setup_description">FloodGuard requires Gemma 4 E2B (~1.5 GB) for on-device scene analysis. Download once — runs fully offline afterwards.</string>
+    <string name="btn_download_model">Download AI Model</string>
+    <string name="downloading_model">Downloading Gemma 4 E2B…</string>
+    <string name="download_progress_format">Downloading… %1$d MB / 2400 MB · %2$d%%</string>
+    <string name="download_failed">Download failed: %s</string>
+    <string name="camera_permission_denied">Camera permission is required for scene analysis and mapping.</string>
+
+    <!-- Pre-Mission Screen -->
+    <string name="pre_mission_header">FloodGuard</string>
+    <string name="pre_mission_subtitle">Rescue Navigation</string>
+    <string name="system_status_healthy">System ready</string>
+    <string name="system_status_degraded">System limited</string>
+    <string name="system_status_critical">System not ready</string>
+    <string name="check_camera">Camera</string>
+    <string name="check_sensors">Sensors</string>
+    <string name="check_model">AI Model</string>
+    <string name="check_audio">Audio</string>
+    <string name="check_battery">Battery</string>
+    <string name="check_ok">OK</string>
+    <string name="check_fail">FAIL</string>
+    <string name="check_partial">LIMITED</string>
+
+    <string name="audio_mode_label">Audio Input Mode</string>
+    <string name="audio_mode_realtime">Real-time (Always Active)</string>
+    <string name="audio_mode_volume">Volume Button (Push to Talk)</string>
+    <string name="audio_mode_realtime_title">Real-time</string>
+    <string name="audio_mode_realtime_sub">Always active</string>
+    <string name="audio_mode_volume_title">Push to Talk</string>
+    <string name="audio_mode_volume_sub">Volume button</string>
+
+    <string name="sensor_count_format">%d/3</string>
+    <string name="battery_level_format">%d%%</string>
+    <string name="btn_start_mission">START EXPLORATION</string>
+    <string name="pre_mission_hint">Ensure device is attached to harness before starting</string>
+    <string name="system_checks_all_passed">All checks passed</string>
+
+    <!-- Active Mission Screen -->
+    <string name="mode_banner_text">Tethered · audio active</string>
+    <string name="mode_banner_rec">REC</string>
+    <string name="metric_elapsed_label">Time</string>
+    <string name="metric_landmark_label">Landmark</string>
+    <string name="metric_battery_label">Battery</string>
+    <string name="metric_audio_label">Audio &amp; Tracking</string>
+    <string name="tracking_ar_vio">AR VIO</string>
+    <string name="tracking_sensor_pdr">Sensor PDR</string>
+    <string name="tracking_limited">Limited</string>
+    <string name="audio_active">Audio active</string>
+    <string name="audio_active_bullet">● Audio active</string>
+    <string name="audio_push_to_talk">Push to talk active</string>
+    <string name="btn_ask_ai">ASK AI</string>
+    <string name="listening_hint">Listening…</string>
+    <string name="btn_stop_mission">FINISH AND VIEW RESULTS</string>
+    <string name="elapsed_format">%02d:%02d</string>
+    <string name="ar_unavailable">AR unavailable — sensor mode only</string>
+
+    <!-- Alert Banner -->
+    <string name="alert_headline">ALERT</string>
+    <string name="alert_near_landmark">Near landmark: %s</string>
+    <string name="alert_past_session">Previous session area. Nearest: %s</string>
+    <string name="alert_revisit_info">%1$d min ago · %2$.1f m</string>
+    <string name="alert_revisit_title">AREA REVISIT DETECTED</string>
+    <string name="alert_revisit_info_sample">Passed here ~3 min ago · 4.2 m</string>
+    <string name="alert_revisit_action">Find another route.</string>
+
+    <!-- Post-Mission Screen -->
+    <string name="review_header">Operation Results</string>
+    <string name="review_end_time">Finished %s</string>
+    <string name="review_end_time_sample">Finished 14:30</string>
+    <string name="review_duration_label">Duration</string>
+    <string name="review_duration_value">%1$d min\n%2$.0f meters</string>
+    <string name="review_duration_unit">min</string>
+    <string name="review_duration_sub">450 meters</string>
+    <string name="review_distance_label">Distance</string>
+    <string name="review_distance_unit">m</string>
+    <string name="review_landmark_label">Landmarks</string>
+    <string name="review_landmark_value">%d found</string>
+    <string name="review_landmark_found">found</string>
+    <string name="review_landmark_sub">New areas</string>
+    <string name="review_revisit_label">Loop Alerts</string>
+    <string name="review_revisit_value">%d alerts</string>
+    <string name="review_revisit_unit">alerts</string>
+    <string name="review_map_title">Track Map</string>
+    <string name="review_landmark_list_title">Landmark List</string>
+    <string name="review_landmark_item">Landmark #%1$d</string>
+    <string name="review_revisit_tag">Loop detected</string>
+    <string name="btn_export_log">EXPORT LOG</string>
+    <string name="btn_finish_review">FINISH</string>
+    <string name="export_success">Log exported to %s</string>
+    <string name="export_failed">Export failed: %s</string>
+
+    <!-- Countdown -->
+    <string name="countdown_harness">Attach to harness</string>
+    <string name="countdown_start_in">Starting in</string>
+    <string name="countdown_go">Go!</string>
+
+    <!-- TTS Scripts (English) -->
+    <string name="tts_countdown">Attach to harness. Starting in five, four, three, two, one, go.</string>
+    <string name="tts_mission_start">System active. Starting exploration.</string>
+    <string name="tts_revisit_basic">Alert. You have passed this area before. Look for another route.</string>
+    <string name="tts_revisit_with_time">Alert. You have passed this area before, about %d minutes ago. Look for another route.</string>
+    <string name="tts_tracking_degraded">Camera tracking lost. Switching to sensor mode.</string>
+    <string name="tts_tracking_recovered">Camera tracking recovered.</string>
+    <string name="tts_tracking_limited">Tracking system limited. Position accuracy reduced.</string>
+    <string name="tts_battery_20">Twenty percent battery remaining.</string>
+    <string name="tts_battery_15">Fifteen percent battery. Consider finishing.</string>
+    <string name="tts_battery_10">Battery very low, ten percent remaining. Finish operation now.</string>
+    <string name="tts_battery_5">Battery critical. Operation must end immediately.</string>
+    <string name="tts_status_periodic">Status. %1$d minutes passed, %2$d landmarks mapped, %3$d percent battery.</string>
+    <string name="tts_thermal_warning">Phone is hot. System may slow down.</string>
+    <string name="tts_mission_complete">Operation complete. Total %1$d minutes, %2$d landmarks.</string>
+
+    <!-- Map Legend -->
+    <string name="legend_position">Your Position</string>
+    <string name="legend_newest">Newest</string>
+    <string name="legend_oldest">Oldest</string>
+    <string name="legend_past_session">Past Session</string>
+
+    <!-- Landmark Detail -->
+    <string name="landmark_detail_title">Landmark Detail</string>
+
+    <!-- Exploration History -->
+    <string name="pre_mission_history_title">Explored Areas</string>
+    <string name="pre_mission_history_count">%1$d landmarks from %2$d sessions</string>
+    <string name="btn_clear_history">Clear History</string>
+    <string name="clear_history_confirm">Exploration history cleared</string>
+    <!-- Map Overlay -->
+    <string name="map_landmark_label_full">Landmark: %1$d</string>
+    <string name="map_past_suffix">" (+%1$d past)"</string>
+    <!-- AI Prompts (English) -->
+    <string name="ai_system_prompt">"You are a disaster rescue navigation assistant. You MUST respond in English. If the user asks if they have been here before, reply with 'INTENT: REVISIT_QUERY'. If the user asks to take a photo or describe the environment, reply with 'INTENT: CAPTURE_LANDMARK'. Provide short, calm, and helpful answers in English."</string>
+    <string name="ai_vision_system_prompt">"You are a disaster rescue navigation assistant. Your task is to accurately and briefly describe the given image in English. Provide calm and helpful answers."</string>
+    <string name="ai_user_vision_prompt">"Describe this scene in 1-2 sentences in English. Focus on unique visual landmarks that identify this specific location: furniture, structural features, water levels, doors, damage patterns. Be specific."</string>
+    <string name="ai_user_audio_prompt">"Respond to this voice command."</string>
+
+    <!-- Tutorial Sheet -->
+    <string name="tutorial_label">GUIDE</string>
+    <string name="tutorial_title">How to Use FloodGuard</string>
+    <string name="tutorial_pre_mission_title">Pre-Mission</string>
+    <string name="tutorial_pre_mission_body">• Verify system readiness checks.\n• Choose audio input mode.\n• Attach device to harness before starting.</string>
+    <string name="tutorial_active_mission_title">Active Mission</string>
+    <string name="tutorial_active_mission_body">• Monitor time, landmarks, and battery.\n• Track map shows your current path.\n• Blinking REC indicates data logging.</string>
+    <string name="tutorial_voice_title">Voice Commands</string>
+    <string name="tutorial_voice_body">• Tap \'ASK AI\' or use proximity sensor.\n• Ask about landmarks or revisiting areas.\n• System responds with calm audio guidance.</string>
+
+    <string name="ai_not_ready">AI failed to load, please restart the app.</string>
+    <string name="ai_loading">AI is loading, please wait a moment.</string>
+    <string name="ai_badge_loading">LOADING</string>
+    <string name="system_status_ai_loading">AI model loading…</string>
+    <string name="system_status_ai_loading_sub">Wait for model to be ready before starting</string>
+    <string name="ai_new_area">You are in a new area so far.</string>
+    <string name="ai_analyzing">Analyzing surroundings. Please wait.</string>
+    <string name="ai_landmark_saved">Landmark saved: %s</string>
+    <string name="ai_status_ready">Camera ready — start moving for mapping</string>
+    <string name="ai_init_failed">Model initialization failed: %s</string>
+    <string name="ai_waiting_camera">Waiting for camera…</string>
+    <string name="ai_analysis_result">Analysis result: %s</string>
+
+</resources>

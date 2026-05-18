@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_screen">#07090D</color>
+    <color name="bg_surface">#0D1520</color>
+    <color name="bg_surface_high">#131D2E</color>
+
+    <!-- Borders -->
+    <color name="border_default">#1C2D42</color>
+    <color name="border_subtle">#101C2B</color>
+
+    <!-- Text -->
+    <color name="text_primary">#EEF2F7</color>
+    <color name="text_secondary">#6B879E</color>
+    <color name="text_tertiary">#354D62</color>
+
+    <!-- Amber — primary CTA, high visibility in dark -->
+    <color name="amber">#F0921A</color>
+    <color name="amber_bg">#120D00</color>
+    <color name="amber_border">#2A1E00</color>
+
+    <!-- Green — healthy / OK -->
+    <color name="status_healthy">#1FCC60</color>
+    <color name="status_healthy_bg">#041108</color>
+    <color name="status_healthy_border">#0A2816</color>
+
+    <!-- Yellow — degraded / limited -->
+    <color name="status_degraded">#FBBF24</color>
+    <color name="status_degraded_bg">#100E00</color>
+    <color name="status_degraded_border">#2A1E00</color>
+
+    <!-- Red — critical / alert -->
+    <color name="status_critical">#EF4444</color>
+    <color name="status_critical_bg">#0F0404</color>
+    <color name="status_critical_border">#2E0A0A</color>
+
+    <!-- Blue — position / tracking -->
+    <color name="map_position">#38BDF8</color>
+    <color name="map_position_halo">#4D38BDF8</color>
+
+    <!-- Battery states -->
+    <color name="battery_high">#1FCC60</color>
+    <color name="battery_mid">#FBBF24</color>
+    <color name="battery_low">#EF4444</color>
+
+    <!-- Alpha versions for UI elements -->
+    <color name="status_healthy_alpha12">#1E1FCC60</color>
+    <color name="status_healthy_alpha33">#541FCC60</color>
+    <color name="status_degraded_alpha12">#1EFBBF24</color>
+    <color name="status_degraded_alpha33">#54FBBF24</color>
+    <color name="status_critical_alpha12">#1EEF4444</color>
+    <color name="status_critical_alpha33">#54EF4444</color>
+    <color name="status_critical_alpha27">#45EF4444</color>
+    <color name="amber_alpha12">#1EF0921A</color>
+    <color name="map_position_alpha47">#7838BDF8</color>
+
+    <!-- Legacy / Compatibility (keep for now if used elsewhere) -->
+    <color name="bg_primary">#000000</color>
+    <color name="bg_overlay">#B3000000</color>
+    <color name="bg_status_bar">#C7000000</color>
+    <color name="map_bg">#0F1419</color>
+    <color name="map_path">#B33B82F6</color>
+    <color name="map_landmark">#EF4444</color>
+    <color name="btn_primary">@color/amber</color>
+    <color name="btn_primary_pressed">#D97D0D</color> <!-- Darker amber -->
+    <color name="btn_stop_bg">@color/status_critical_bg</color>
+    <color name="btn_stop_border">@color/status_critical_border</color>
+    <color name="btn_secondary_border">@color/border_default</color>
+    <color name="status_healthy_text">@color/status_healthy</color>
+    <color name="status_degraded_text">@color/status_degraded</color>
+    <color name="status_critical_text">@color/status_critical</color>
+    <color name="alert_bg">@color/status_critical</color>
+    <color name="alert_text">@color/text_primary</color>
+    <color name="alert_subtext">@color/text_secondary</color>
+</resources>

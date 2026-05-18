@@ -1,0 +1,23 @@
+.gradle/
+.idea/
+.kotlin/
+**/build/
+local.properties
+*.iml
+*.apk
+*.aab
+*.dex
+*.class
+*.log
+*.tmp
+*.litertlm
+
+# Research / scratch docs — not source code
+Projected Flood Damage*.md
+architecture.dot
+architecture.md
+kaggle_proof_of_work.md
+
+# Claude Code internals
+.claude/
+.artifacts/

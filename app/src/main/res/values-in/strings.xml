@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FloodGuard</string>
+
+    <!-- Model Download -->
+    <string name="model_setup_title">Pengaturan Awal</string>
+    <string name="model_setup_description">FloodGuard memerlukan Gemma 4 E2B (~1.5 GB) untuk analisis pemandangan di perangkat. Unduh sekali — setelahnya berjalan sepenuhnya offline.</string>
+    <string name="btn_download_model">Unduh Model AI</string>
+    <string name="downloading_model">Mengunduh Gemma 4 E2B…</string>
+    <string name="download_progress_format">Mengunduh… %1$d MB / 2400 MB · %2$d%%</string>
+    <string name="download_failed">Gagal mengunduh: %s</string>
+    <string name="camera_permission_denied">Izin kamera diperlukan untuk analisis pemandangan dan pemetaan.</string>
+
+    <!-- Pre-Mission Screen -->
+    <string name="pre_mission_header">FloodGuard</string>
+    <string name="pre_mission_subtitle">Navigasi Penyelamatan</string>
+    <string name="system_status_healthy">Sistem siap</string>
+    <string name="system_status_degraded">Sistem terbatas</string>
+    <string name="system_status_critical">Sistem tidak siap</string>
+    <string name="check_camera">Kamera</string>
+    <string name="check_sensors">Sensor</string>
+    <string name="check_model">Model AI</string>
+    <string name="check_audio">Audio</string>
+    <string name="check_battery">Baterai</string>
+    <string name="check_ok">OK</string>
+    <string name="check_fail">Gagal</string>
+    <string name="check_partial">Terbatas</string>
+
+    <string name="audio_mode_label">Mode Input Audio</string>
+    <string name="audio_mode_realtime">Real-time (Selalu aktif)</string>
+    <string name="audio_mode_volume">Tombol volume (Tekan bicara)</string>
+    <string name="audio_mode_realtime_title">Real-time</string>
+    <string name="audio_mode_realtime_sub">Selalu aktif</string>
+    <string name="audio_mode_volume_title">Tekan Bicara</string>
+    <string name="audio_mode_volume_sub">Tombol volume</string>
+
+    <string name="sensor_count_format">%d/3</string>
+    <string name="battery_level_format">%d%%</string>
+    <string name="btn_start_mission">MULAI EKSPLORASI</string>
+    <string name="pre_mission_hint">Pastikan perangkat terpasang di harnes sebelum memulai</string>
+    <string name="system_checks_all_passed">Semua cek lulus</string>
+
+    <!-- Active Mission Screen -->
+    <string name="mode_banner_text">Tertambat · suara aktif</string>
+    <string name="mode_banner_rec">REC</string>
+    <string name="metric_elapsed_label">Waktu</string>
+    <string name="metric_landmark_label">Landmark</string>
+    <string name="metric_battery_label">Baterai</string>
+    <string name="metric_audio_label">Audio &amp; Pelacakan</string>
+    <string name="tracking_ar_vio">AR VIO</string>
+    <string name="tracking_sensor_pdr">Sensor PDR</string>
+    <string name="tracking_limited">Terbatas</string>
+    <string name="audio_active">Suara aktif</string>
+    <string name="audio_active_bullet">● Suara aktif</string>
+    <string name="audio_push_to_talk">Tekan untuk bicara aktif</string>
+    <string name="btn_ask_ai">TANYA AI</string>
+    <string name="listening_hint">MENDENGARKAN…</string>
+    <string name="btn_stop_mission">Selesai &amp; Lihat Hasil</string>
+    <string name="elapsed_format">%02d:%02d</string>
+    <string name="ar_unavailable">AR tidak tersedia — mode sensor saja</string>
+
+    <!-- Alert Banner -->
+    <string name="alert_headline">PERINGATAN</string>
+    <string name="alert_near_landmark">Dekat landmark: %s</string>
+    <string name="alert_past_session">Area sesi sebelumnya. Terdekat: %s</string>
+    <string name="alert_revisit_title">AREA SUDAH DILEWATI</string>
+    <string name="alert_revisit_info">%1$d menit lalu · %2$.1f m</string>
+    <string name="alert_revisit_info_sample">Lewat sini ~3 mnt lalu · 4.2 m</string>
+    <string name="alert_revisit_action">Cari rute lain.</string>
+
+    <!-- Post-Mission Screen -->
+    <string name="review_header">Hasil Operasi</string>
+    <string name="review_end_time">Selesai %s</string>
+    <string name="review_end_time_sample">Selesai 14:30</string>
+    <string name="review_duration_label">Durasi</string>
+    <string name="review_duration_value">%1$d menit\n%2$.0f meter</string>
+    <string name="review_duration_unit">menit</string>
+    <string name="review_duration_sub">450 meter</string>
+    <string name="review_distance_label">Jarak</string>
+    <string name="review_distance_unit">m</string>
+    <string name="review_landmark_label">Landmark</string>
+    <string name="review_landmark_value">%d ditemukan</string>
+    <string name="review_landmark_found">ditemukan</string>
+    <string name="review_landmark_sub">Area baru</string>
+    <string name="review_revisit_label">Peringatan Loop</string>
+    <string name="review_revisit_value">%d peringatan</string>
+    <string name="review_revisit_unit">peringatan</string>
+    <string name="review_map_title">Peta Jejak</string>
+    <string name="review_landmark_list_title">Daftar Landmark</string>
+    <string name="review_landmark_item">Landmark #%1$d</string>
+    <string name="review_revisit_tag">Loop terdeteksi</string>
+    <string name="btn_export_log">EKSPOR LOG</string>
+    <string name="btn_finish_review">SELESAI</string>
+    <string name="export_success">Log diekspor ke %s</string>
+    <string name="export_failed">Gagal mengekspor: %s</string>
+
+    <!-- Countdown -->
+    <string name="countdown_harness">Pasang perangkat ke harnes</string>
+    <string name="countdown_start_in">Mulai dalam</string>
+    <string name="countdown_go">MULAI!</string>
+
+    <!-- TTS Scripts (Bahasa Indonesia) -->
+    <string name="tts_countdown">Pasang ke harnes. Mulai dalam lima, empat, tiga, dua, satu, mulai.</string>
+    <string name="tts_mission_start">Sistem aktif. Mulai eksplorasi.</string>
+    <string name="tts_revisit_basic">Peringatan. Anda sudah melewati area ini. Cari rute lain.</string>
+    <string name="tts_revisit_with_time">Peringatan. Anda sudah melewati area ini, sekitar %d menit lalu. Cari rute lain.</string>
+    <string name="tts_tracking_degraded">Pelacakan kamera hilang. Beralih ke mode sensor.</string>
+    <string name="tts_tracking_recovered">Pelacakan kamera pulih.</string>
+    <string name="tts_tracking_limited">Sistem pelacakan terbatas. Akurasi posisi berkurang.</string>
+    <string name="tts_battery_20">Baterai dua puluh persen tersisa.</string>
+    <string name="tts_battery_15">Baterai lima belas persen. Pertimbangkan untuk menyelesaikan.</string>
+    <string name="tts_battery_10">Baterai sangat rendah, sepuluh persen tersisa. Selesaikan operasi sekarang.</string>
+    <string name="tts_battery_5">Baterai kritis. Operasi harus segera diakhiri.</string>
+    <string name="tts_status_periodic">Status. Sudah %1$d menit, dipetakan %2$d landmark, baterai %3$d persen.</string>
+    <string name="tts_thermal_warning">Ponsel panas. Sistem mungkin melambat.</string>
+    <string name="tts_mission_complete">Operasi selesai. Total %1$d menit, %2$d landmark.</string>
+
+    <!-- Map Legend -->
+    <string name="legend_position">Posisi Anda</string>
+    <string name="legend_newest">Terbaru</string>
+    <string name="legend_oldest">Terlama</string>
+    <string name="legend_past_session">Sesi Lampau</string>
+
+    <!-- Landmark Detail -->
+    <string name="landmark_detail_title">Detail Landmark</string>
+
+    <!-- Exploration History -->
+    <string name="pre_mission_history_title">Area Tereksplorasi</string>
+    <string name="pre_mission_history_count">%1$d landmark dari %2$d sesi</string>
+    <string name="btn_clear_history">Hapus Riwayat</string>
+    <string name="clear_history_confirm">Riwayat eksplorasi dihapus</string>
+
+    <!-- Map Overlay -->
+    <string name="map_landmark_label_full">Landmark: %1$d</string>
+    <string name="map_past_suffix"> (+%1$d lampau)</string>
+
+    <!-- AI Prompts (Indonesian) -->
+    <string name="ai_system_prompt">"Anda adalah asisten navigasi penyelamatan bencana. Anda WAJIB menjawab dalam Bahasa Indonesia. Jika user bertanya apakah mereka pernah ke sini, balas dengan 'INTENT: REVISIT_QUERY'. Jika user meminta ambil foto atau deskripsi lingkungan, balas dengan 'INTENT: CAPTURE_LANDMARK'. Berikan jawaban yang singkat, tenang, dan membantu dalam Bahasa Indonesia."</string>
+    <string name="ai_vision_system_prompt">"Anda adalah asisten navigasi penyelamatan bencana. Tugas Anda adalah mendeskripsikan gambar yang diberikan secara akurat dan singkat dalam Bahasa Indonesia. Berikan jawaban yang tenang dan membantu."</string>
+    <string name="ai_user_vision_prompt">"Gambarkan pemandangan ini dalam 1-2 kalimat dalam Bahasa Indonesia. Fokus pada landmark visual unik yang mengidentifikasi lokasi spesifik ini: furnitur, fitur struktural, ketinggian air, pintu, pola kerusakan. Jadilah spesifik."</string>
+    <string name="ai_user_audio_prompt">"Tanggapi perintah suara ini."</string>
+
+    <!-- Tutorial Sheet -->
+    <string name="tutorial_label">PANDUAN</string>
+    <string name="tutorial_title">Cara Menggunakan FloodGuard</string>
+    <string name="tutorial_pre_mission_title">Pra-Misi</string>
+    <string name="tutorial_pre_mission_body">• Verifikasi cek kesiapan sistem.\n• Pilih mode input audio.\n• Pasang perangkat ke harnes sebelum memulai.</string>
+    <string name="tutorial_active_mission_title">Misi Aktif</string>
+    <string name="tutorial_active_mission_body">• Pantau waktu, landmark, dan baterai.\n• Peta jejak menampilkan jalur saat ini.\n• Kedipan REC menandakan log data aktif.</string>
+    <string name="tutorial_voice_title">Perintah Suara</string>
+    <string name="tutorial_voice_body">• Ketuk \'TANYA AI\' atau gunakan sensor proksimitas.\n• Tanyakan tentang landmark atau area yang dilewati.\n• Sistem merespons dengan panduan audio yang tenang.</string>
+
+    <string name="ai_not_ready">AI gagal dimuat, silakan restart aplikasi.</string>
+    <string name="ai_loading">AI sedang dimuat, harap tunggu sebentar.</string>
+    <string name="ai_badge_loading">MEMUAT</string>
+    <string name="system_status_ai_loading">AI sedang dimuat…</string>
+    <string name="system_status_ai_loading_sub">Tunggu hingga model siap sebelum memulai</string>
+    <string name="ai_new_area">Sejauh ini Anda berada di area baru.</string>
+    <string name="ai_analyzing">Sedang menganalisis lingkungan sekitar. Tunggu sebentar.</string>
+    <string name="ai_landmark_saved">Landmark tersimpan: %s</string>
+    <string name="ai_status_ready">Kamera siap — mulai bergerak untuk pemetaan</string>
+    <string name="ai_init_failed">Inisialisasi model gagal: %s</string>
+    <string name="ai_waiting_camera">Menunggu kamera...</string>
+    <string name="ai_analysis_result">Hasil analisis: %s</string>
+
+</resources>
